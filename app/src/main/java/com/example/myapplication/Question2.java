@@ -31,16 +31,12 @@ public class Question2 extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        if (v == b3 || v == b2 || v == b4) {
-            Intent intent = new Intent(this, Question2.class);
-            startActivity(intent);
-        }
-        if (v == b1) {
-            Intent intent = new Intent(this, Question2.class);
-            count = 5;
-            startActivity(intent);
 
+        if (v == b1) {
+            count = 5;
         }
+        Intent intent = new Intent(this, Question3.class);
+        startActivity(intent);
     }
     public static int getPoints() {
         return count + Question1.getPoints();
