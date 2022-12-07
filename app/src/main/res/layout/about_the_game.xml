@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="AboutTheGame">
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="412dp"
+        android:layout_height="95dp"
+        android:text="הנך עומד להשתתף בחידון הטריוויה הגדול בארץ.
+         הוראות:יוצגו לפניך מספר שאלות, לכל שאלה שתוצג על המסך יהיו לך ארבע אפשרויות לתשובה,רק תשובה אחת נכונה.
+אין להעזר באף גורם חיצוני ואף חומר עזר (וייודע לנו במידה שכן) ואתה תפסל במיידית במידה שכן
+בהצלחה רבה! (אתם תצטרכו את זה)" />
+
+    <Button
+        android:id="@+id/ret"
+        android:layout_width="409dp"
+        android:layout_height="112dp"
+        android:text="חזרה לבית" />
+
+</LinearLayout>
