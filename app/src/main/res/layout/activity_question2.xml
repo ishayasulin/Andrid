@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Question1">
+    tools:context=".Question2">
 
     <TextView
         android:id="@+id/tvqst1"
@@ -15,7 +15,7 @@
         android:gravity="center"
         android:textSize="26sp"
         android:layout_marginTop="73.5dp"
-        android:text="whats the name of the computer teacher in yashtsak" />
+        android:text="איזה חיה המורה רחלי הכי אוהבת" />
 
     <Button
         android:id="@+id/btnans1"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="Rebbay Yoed" />
+        android:text="ברווז" />
 
     <Button
         android:id="@+id/btnans2"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="Rebbay Naty" />
+        android:text="כלב" />
 
     <Button
         android:id="@+id/btnans3"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="Racheli" />
+        android:text="חתול" />
 
     <Button
         android:id="@+id/btnans4"
@@ -47,6 +47,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="Rebbay Prince" />
+        android:text="סוס" />
 
 </LinearLayout>

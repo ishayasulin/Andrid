@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="AboutTheGame">
+    tools:context=".About">
 
     <TextView
         android:id="@+id/details"
-        android:layout_width="412dp"
-        android:layout_height="95dp"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="הנך עומד להשתתף בחידון הטריוויה הגדול בארץ.
          הוראות:יוצגו לפניך מספר שאלות, לכל שאלה שתוצג על המסך יהיו לך ארבע אפשרויות לתשובה,רק תשובה אחת נכונה.
 אין להעזר באף גורם חיצוני ואף חומר עזר (וייודע לנו במידה שכן) ואתה תפסל במיידית במידה שכן
@@ -20,6 +21,8 @@
         android:id="@+id/ret"
         android:layout_width="409dp"
         android:layout_height="112dp"
-        android:text="חזרה לבית" />
+        android:text="חזרה לבית"
+        android:layout_marginTop="150dp"
+        />
 
 </LinearLayout>

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class AboutTheGame extends AppCompatActivity implements
+public class About extends AppCompatActivity implements
         View.OnClickListener {
     Button ret;
     TextView details;
@@ -16,9 +16,9 @@ public class AboutTheGame extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.about_the_game);
-         ret = (Button) findViewById(R.id.ret);
-         details = (TextView) findViewById(R.id.details);
+        setContentView(R.layout.activity_about);
+        ret = (Button) findViewById(R.id.ret);
+        details = (TextView) findViewById(R.id.details);
         ret.setOnClickListener(this);
     }
 
