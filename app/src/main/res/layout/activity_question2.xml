@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/page"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +16,7 @@
         android:gravity="center"
         android:textSize="26sp"
         android:layout_marginTop="73.5dp"
-        android:text="איזה חיה המורה רחלי הכי אוהבת" />
+        android:text="מהי בירת גרמניה" />
 
     <Button
         android:id="@+id/btnans1"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="ברווז" />
+        android:text="ברלין" />
 
     <Button
         android:id="@+id/btnans2"
@@ -31,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="כלב" />
+        android:text="רומניה" />
 
     <Button
         android:id="@+id/btnans3"
@@ -39,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="חתול" />
+        android:text="ניו יורק" />
 
     <Button
         android:id="@+id/btnans4"
@@ -47,6 +48,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:text="סוס" />
+        android:text="יד בנימין" />
 
 </LinearLayout>

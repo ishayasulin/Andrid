@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Question4 extends AppCompatActivity implements View.OnClickListener {
     static int count = 0;
@@ -31,18 +34,41 @@ public class Question4 extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        if (v == b1 || v == b3 || v == b2) {
-            Intent intent = new Intent(this, Result.class);
-            startActivity(intent);
-        }
         if (v == b4) {
-            Intent intent = new Intent(this, Result.class);
             count = 5;
-            startActivity(intent);
-
         }
+        else {
+            count = 0;
+        }
+        Intent intent = new Intent(this, Result.class);
+        startActivity(intent);
     }
     public static int getPoints() {
-        return count + Question1.getPoints();
+        return count + Question3.getPoints();
     }
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menuain,menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        super.onOptionsItemSelected(item);
+        int id=item.getItemId();
+        if(id==R.id.home){
+            Toast.makeText(this,"you selected home",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        else if(R.id.restart==id){
+            Toast.makeText(this,"you selected restart",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, Question1.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.Guide){
+            Toast.makeText(this,"you selected guide",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, About.class);
+            startActivity(intent);
+        }
+        return true;
+    }
+
 }
